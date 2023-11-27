@@ -1,0 +1,11 @@
+.fosaaz {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: calc(100vh - 61px);
+    background: rgb(234 234 234);
+}
+
+
