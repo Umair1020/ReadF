@@ -12,6 +12,7 @@ import OcrPdf from "./Pages/OcrPdf/OcrPdf";
 import PdfView from "./components/Pdf/Part";
 import Pdfscanner from "./Pages/Pdfscanner";
 import Usecause from "./Pages/UseCause/Usecause";
+import Tools from "./Pages/Tools";
 
 const userCookie = Cookies.get("user");
 function App() {
@@ -59,7 +60,10 @@ function App() {
        <Route
         path="/use-cause"
         element={userCookie ? <Usecause /> : <Navigate to="/login" />}
-      />
+      /> <Route
+      path="/tools"
+      element={userCookie ? <Tools /> : <Navigate to="/login" />}
+    />
     </Routes>
   );
 }
